@@ -38,12 +38,13 @@ def banco(sql):
     try:
         # Conexão com o banco de dados PostgreSQL
         conn = psycopg2.connect(
-            host = "dpg-cuhulhlds78s73e3eabg-a.oregon-postgres.render.com",
+            host = "dpg-cuhul4bv2p9s73c22g80-a.oregon-postgres.render.com",
             port = "5432",
-            dbname = "senaidb_giju",
-            user = "senaidb_giju_user",
-            password = "oynUaoIszXotTDt9caTgB5x17bp0etxB"
+            dbname = "senaidb_fhpm",
+            user = "senaidb_fhpm_user",
+            password = "F8kSUUFo7ZUgLut1vGGrqJTY9IhL4cCz"
         )
+
         cursor = conn.cursor() # cursor vai ser a variável para executar os comandos SQL.
         cursor.execute(sql) # executa o comando sql seja insert, select .. etc
 
